@@ -1,4 +1,4 @@
-if exists("g:vimwriteroom") 
+if exists("g:vimwriteroom")
 	finish
 endif
 
@@ -22,7 +22,7 @@ function VimWriteRoom ()
 		let s:oldfuoptions=&fuoptions
 		let s:oldformatoptions=&formatoptions
 		let s:oldcolorscheme=g:colors_name
-		
+
 		let s:isfu=&fu
 		let s:showtabline=&showtabline
 		let s:laststatus=&laststatus
@@ -79,7 +79,7 @@ function VimWriteRoom ()
 		unlet s:oldguioption
 		unlet s:oldfuoptions
 		unlet s:oldformatoptions
-		
+
 		execute 'colorscheme ' . s:oldcolorscheme
 
 		if (s:isfu == 1)
@@ -93,31 +93,31 @@ function VimWriteRoom ()
 		else
 			set nowrap
 		endif
-		
+
 		if (s:islist == 1)
 			set list
 		else
 			set nolist
 		endif
-		
+
 		if (s:islinebreak == 1)
 			set linebreak
 		else
 			set nolinebreak
 		endif
-	
+
 		if (s:iscursorline == 1)
 			set cursorline
 		else
 			set nocursorline
 		endif
-		
+
 		if (s:isnumber == 1)
 			set number
 		else
 			set nonumber
 		endif
-		
+
 		if (s:isrelativenumber == 1)
 			set relativenumber
 		else
