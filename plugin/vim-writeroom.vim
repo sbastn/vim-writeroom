@@ -38,10 +38,11 @@ function VimWriteRoom ()
 		endif
 
 		set lines=999
-		set columns=80
+		set columns=60
 		set colorcolumn=0
-		set textwidth=80
+		set textwidth=60
 		set guioptions-=r
+    set guifont=Source\ Code\ Pro:h18
 		set fuoptions=background:#FFFFFFFF
 		set fu
 		set nolist
