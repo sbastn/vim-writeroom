@@ -42,7 +42,7 @@ function VimWriteRoom ()
 		set colorcolumn=0
 		set textwidth=80
 		set guioptions-=r
-		set fuoptions=background:#00000000
+		set fuoptions=background:#FFFFFFFF
 		set fu
 		set nolist
 		set formatoptions=l1
